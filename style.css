@@ -2,7 +2,6 @@ body {
   font-family: "Roboto";
   margin: 0;
   height: 100vh;
-  box-sizing: border-box;
 }
 
 p {
@@ -52,11 +51,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 70px;
 }
 .header-desc-left {
-  padding-right: 70px;
+  max-width: 450px;
 }
-
 .header-desc-left h1 {
   font-size: 48px;
   color: #f9faf8;
@@ -73,8 +72,96 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   width: 550px;
   height: 250px;
   overflow: hidden;
+}
+/* cards contents */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+  margin: 0;
+}
+.content-one h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  margin: 60px;
+}
+.card-container {
+  display: flex;
+  gap: 60px;
+}
+.card {
+  width: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  color: gray;
+  font-size: 17px;
+}
+.card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  border: 5px solid #3882f6;
+  margin-bottom: 10px;
+}
+/* qoutes section */
+.content-two {
+  background-color: #e5e7eb;
+  padding: 120px 350px;
+}
+
+.content-two h2 {
+    text-align: end;
+    margin: 0;
+}
+.content-two p {
+    text-align: start;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 200;
+    color: #1f2937;
+}
+
+/* sign up banner */
+.sign-up-banner {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    /* width: 60%; */
+    padding:30px 100px ;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 150px;
+
+}
+.sign-up-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.sign-up-banner h3 {
+    margin: 0;
+}
+.sign-up-banner button {
+    border: 3px solid #e5e7eb;
+}
+
+/* footer */
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 100px;
 }
